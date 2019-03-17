@@ -44,9 +44,14 @@ video {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 48px;
+  padding: 64px;
 }
 
+@media screen and (max-width: 600px) {
+  header {
+    padding: 48px;
+  }
+}
 
 header a {
   color: #000;
@@ -56,8 +61,18 @@ header a {
   font-family: 'Moderat Bold';
 }
 
-section:not(#section-image) {
-  padding: 48px;
+#section-intro {
+  padding: 64px;
+}
+
+#section-projects {
+  padding: 64px;
+}
+
+@media screen and (max-width: 600px) {
+  #section-projects {
+    padding: 0px;
+  }
 }
 
 #section-intro {
@@ -66,12 +81,26 @@ section:not(#section-image) {
 
 #section-projects {
   display: grid;
-  grid-template-columns: auto auto auto;
   grid-gap: 50px;
 }
 
 #section-projects div {
   position: relative;
+  width: 100%;
+}
+
+#section-projects .project-two {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    #section-projects div {
+      width: 100%;
+    }
+
+    #section-projects .project-two {
+      width: 100%;
+    }
 }
 
 div img {
@@ -99,7 +128,7 @@ div img {
 }
 
 @media screen and (max-width: 600px) {
-  #section-image-text  img {
+  #section-image-text img {
     width: 100%;
   }
   #section-image-text .text-description {

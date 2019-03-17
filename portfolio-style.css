@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Moderat Bold";
+  src: url("fonts/Moderat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Moderat Regular";
+  src: url("fonts/Moderat-Regular.ttf");
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px;
+}
+
+header a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  background: #ff0;
+  font-family: 'Moderat Bold';
+}
+
+#section-one {
+  padding: 48px;
+  max-width: 600px;
+  font-family: 'Moderat Regular';
+}
+
+#section-two {
+  padding: 48px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+}

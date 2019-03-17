@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Christie Molloy Portfolio</title>
+    <link href="portfolio-style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="index.html" class="logo">Christie Molloy</a>
+      </div>
+      <div class="header-right">
+          <a href="index.html" class="action">Work</a>
+          <a href="index.html" class="action">About</a>
+      </div>
+    </header>
+    <section id="section-intro">
+      <h1>Increasing UX Engineers Efficiency with this Tool</h1>
+      <p>HIVE is a tool for PCs and Laptops that is strictly designed for UX Engineers. </p>
+    </section>
+    <section id="section-image">
+      Image goes here
+    </section>
+    <section id="section-centered">
+        <h3>THE PROBLEM</h3>
+        <h2>UI Development is inefficient on one screen.</h2>
+        <p>
+          As a UI Developer, everyday I have multiple windows open on my computer while I work.
+          The monitor I use is my savior as I'm able to have all my main windows open without opening/hiding/closing them.
+          But what happens when I'm working from home or on the go and I only have my personal laptop, no matter if its the 15 inch model or not?
+          I use four main windows in a cyclical manner - one for researching, designing, developing and researching.
+        </p>
+        <img src="image/hive-windows-multiple.png">
+    </section>
+    <section id="section-centered">
+      <h3>ANALYZING THE EXPERIENCE</h3>
+      <h2>What is out there to help window management?</h2>
+      <p>
+        I use four main windows in a cyclical manner - one for researching, designing, developing and researching.
+        For example, I will use Sketch to ....
+      </p>
+    </section>
+    <section id="section-centered">
+        <h3>RESEARCH</h3>
+        <h2>Conducting User Interviews.</h2>
+        <p>
+          I needed to undertake further research to confirm that I wasn't the only UI Developer experiencing this problem.
+          My <u>research method</u> consisted of <u>User Interviews</u> and <u>Camera Study</u>: user interviews to see what people did and didn't realize about their process and then camera study to analyze their processes.
+          I conducted research with eight UI Developers and UX Engineers, who work on my team or work in a similar role outside of the company.
+          As a few of the participants work remotely, I had them screen record their typical work process from only their laptop for one hour,
+          as well as answering some of the following questions:
+        </p>
+          <ol>
+            <li>
+              Describe the windows they have open when conducting typical UI development work.
+            </li>
+            <li>
+              How often do you work from one screen i.e. laptop?
+            </li>
+            <li>
+              Do you believe that you multitask in your job? Could you describe this process?
+            </li>
+            <li>
+              How many windows would you have open at once when conducting typical work.
+            </li>
+            <li>
+              What techniques do you currently use to have multiple windows open at once on one screen.
+            </li>
+          </ol>
+          <p>
+            I concluded the study by uncovering these user experience pain points:
+          </p>
+        <img src="image/hive-research-results.png">
+    </section>
+    <section id="section-centered">
+        <h3>FURTHER RESEARCH</h3>
+        <h2>The UI Developer</h2>
+        <p>
+          I needed to further investigate the last two points as they present the real problem.
+          100% of UI Developers believe they multi-task. <b>But are they really multitasking or is this an assumption?</b>
+          And if the windows they have open are categorized by <b>Research</b>, <b>Design</b>, <b>Development</b>, <b>Testing</b> and <b>Communication</b>
+          then how does their workflow really look? 
+          I went back to the screen recordings for each research participant in order to track their workflow as seen below.
+          90% of partipants predominately had two windows up at the one time, with a 75% focus on one of them at the one time.
+          They "multitask" by switching between multiple windows, but they are only focused on the interaction between two screens at once.
+          For example, they would constantly switch between their local testing environment and their code editor.
+        </p>
+        <img src="image/hive-research-flow.png">
+      </section>
+      <section id="section-centered">
+          <h3>USER FLOW</h3>
+          <h2>Mapping the User Flow</h2>
+          <p>
+            The diagram below is an example of one of the user flows that I mapped. 
+          </p>
+          <ul>
+            <li>
+                <b> Development + Design</b> They were developing a component based on the design in Sketch.
+                They realized that the design doesn't handle the case when the text overflows.
+            </li>
+            <li>
+                <b> Design + Research</b> They went to Google to analyze past developments of this component and to see how they handle overflow.
+            </li>
+            <li>
+                <b> Design + Research + Communication</b>They found a solution and wanted to confirm it with the designer.
+            </li>
+            <li>
+                <b> Design + Development</b>They updated the code to match what the designer had communicated to them and updated the design file. 
+            </li>
+            <li>
+                <b> Development + Testing</b> They tested their designs in their local host while making adjustments to code.
+            </li>
+            <li>
+                <b> Testing + Design</b> They compared their testing environment with their designs in the Sketch file.
+            </li>
+            <li>
+                <b> Testing + Design + Communication</b> They sent the link to the designer to confirm the updates.
+            </li>
+          </ul>
+          </p>
+          <img src="image/hive-research-flow-2.png">
+        </section>
+        <section id="section-centered">
+            <h3>WIREFRAMING</h3>
+            <h2>Exploring Multiple Solutions</h2>
+            <p>
+              The actions that UI Developers undertake is clear.
+              They pivot when shifting quickly from one set of actions to another set of relevant actions.
+              They add in communication - communication doesnt replace a window.
+              They spend more time on some actions over others.
+
+              The following wireframes explore how users will:
+              add their windows in the controller
+              pivot between windows
+              include communication as an actions
+              focus on one window over the other in an action.
+            </p>
+          </section>
+          <section id="section-centered">
+              <h3>PROTOTYPE</h3>
+              <h2>Rapid Prototype to show Flow</h2>
+              <video src="image/hive-prototype-video.mov" controls>
+            </section>
+  </body>
+</html>

@@ -33,6 +33,10 @@ p {
   color: #979797;
 }
 
+ul li {
+  font-family: 'Open Sans', sans-serif;
+}
+
 img {
   width: 100%;
 }

@@ -50,24 +50,25 @@ button{
 
 .button-2 {
   border: none;
-  color: #f06292;
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.40);
-  height: 60px;
-  width: 200px;
+  color: #fbc02d;
+  padding: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 38px;
   vertical-align: center;
   margin: 30px;
-  font-family: 'Lobster', cursive;
 }
 
 .button-2:focus {
   animation-name: spin;
-  animation-duration: 500ms;
-  animation-iteration-count: 1;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
   animation-timing-function: linear; 
+}
+
+.button-2:focus::after {
+  top: 20px;
 }
 
 @keyframes spin {
@@ -119,9 +120,8 @@ button{
 
 .button-4 {
   border: none;
-  background-color: #ef5350;
   border-radius: 4px;
-  color: white;
+  color: red;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -129,11 +129,10 @@ button{
   font-size: 24px;
   vertical-align: center;
   margin: 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .button-4:focus {
-  background-color: #e57373;
   transition: all .3s ease-in-out;
   opacity: 0;
 }
@@ -162,10 +161,8 @@ button{
   border: 2px solid #e65100;
   transition-timing-function: ease-out;
 
-  /* Quick on the way out */
   transition: 1.5s;
 
-  /* Hide thing by pushing it outside by default */
   transform: translateX(130%);
   opacity: 0;
 }
@@ -244,5 +241,42 @@ button{
   }
   100% {
       transform: scale(1.0);
+  }
+}
+
+.button-8 {
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  color:#00838f;
+  box-shadow: 0 0 15px 0 rgba(25,118,210, 0.20);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: center;
+  margin: 30px;
+  font-family: Helvetica, sans-serif;
+}
+
+.button-8-text {
+  display: none;
+  color: #80cbc4;
+}
+
+.button-8:focus .button-8-text {
+  display: inline-block;
+  transition: 3s;
+  animation-name: button-8-animation;
+  animation-duration: 900ms;
+}
+
+@keyframes button-8-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
   }
 }

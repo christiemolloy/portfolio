@@ -8,6 +8,10 @@ button{
   outline: none;
 }
 
+div .div-1 {
+  background-color: lightblue;
+}
+
 .button-1 {
   margin: 40px;
   position: relative;

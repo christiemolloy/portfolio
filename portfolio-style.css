@@ -120,13 +120,11 @@ div img {
 }
 
 #section-image-text .text-description {
-  float: left;
   width: calc(50% - 64px - 64px);
   padding: 64px;
 }
 
 #section-image-text img {
-  float: right;
   width: calc(50% - 64px - 64px);
   padding: 64px;
 }

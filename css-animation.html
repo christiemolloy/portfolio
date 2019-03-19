@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>CSS Meets Animation</title>
+    <link href="portfolio-style.css" rel="stylesheet" type="text/css">
     <link href="css-animation-style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -12,10 +13,23 @@
     </style>
   </head>
   <body>
+      <header>
+          <div class="header-left">
+            <a href="index.html" class="logo">Christie Molloy</a>
+          </div>
+          <div class="header-right">
+              <a href="index.html" class="action">Work</a>
+              <a href="index.html" class="action">About</a>
+          </div>
+    </header>
+    <section id="section-intro">
+        <h1>Button Study</h1>
+        <p>Exploring different CSS-only Animations </p>
+      </section>
     <div class="main-container">
       <div>
         <button class="button-1">
-          <p class="button-1-text-1">+</p>
+          <p class="button-1-text-1"><i class="fas fa-plus"></i></p>
           <div class="button-1-text-2"><i class="fas fa-check"></i></div>
         </button>
       </div>
@@ -31,13 +45,24 @@
       </div>
       <div>
         <button class="button-4">
-          Close
+          <i class="fas fa-times-circle"></i>
         </button>
         </div>
         <div>
           <button class="button-5">
             <i class="fas fa-cat"></i>
           </button>
+        </div>
+        <div>
+          <button class="button-6">
+            <i class="button-6-smoking-ban fas fa-smoking-ban"></i>
+            <i class="button-6-smoking fas fa-smoking"></i>
+          </button>
+        </div>
+        <div>
+          <button class="button-7">
+              <i class="button-7-heart fas fa-heart"></i>
+          </button> 
         </div>
     </div>
   </body>

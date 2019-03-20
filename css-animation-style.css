@@ -1,7 +1,18 @@
 .main-container {
   padding: 64px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.main-container div {
+  padding: 50px;
+  text-align: center;
+}
+
+.main-container > div > * {
+  display: inline-block;
 }
 
 button{
@@ -9,13 +20,12 @@ button{
 }
 
 div .div-1 {
-  background-color: lightblue;
+  background-color: #63a4ff;
 }
 
 .button-1 {
-  margin: 40px;
   position: relative;
-  background-image: radial-gradient(#0288d1, #01579b);
+  background-image: radial-gradient(#1976d2, #004ba0);
   box-shadow: 0 10px 30px 0 rgba(0,0,0,0.40);
   border: none;
   height: 80px;
@@ -34,6 +44,7 @@ div .div-1 {
   color: white;
   font-size: 16px;
   display: none;
+  vertical-align: center;
 }
 
 .button-1:focus {
@@ -48,20 +59,24 @@ div .div-1 {
 }
 
 .button-1:focus .button-1-text-2 {
-  display: block;
+  display: inline-block;
   transition: all .6s ease-out-in;
 }
 
+div .div-2 {
+  background-color: #8eacbb;
+}
+
 .button-2 {
+  background-color: transparent;
   border: none;
-  color: #fbc02d;
+  color: #34515e;
   padding: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 38px;
   vertical-align: center;
-  margin: 30px;
 }
 
 .button-2:focus {
@@ -84,12 +99,16 @@ div .div-1 {
   }
 }
 
+div .div-3 {
+  background-color: #c5cae9;
+}
+
 .button-3 {
   border: none;
   background-color: white;
   border-radius: 10px;
-  color:#1e88e5;
-  box-shadow: 0 0 15px 0 rgba(25,118,210, 0.20);
+  color:#5c6bc0;
+  box-shadow: 0 0 15px 0 rgba(25,118,210, 0.50);
   height: 60px;
   width: 200px;
   text-align: center;
@@ -97,7 +116,6 @@ div .div-1 {
   display: inline-block;
   font-size: 20px;
   vertical-align: center;
-  margin: 30px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -122,23 +140,31 @@ div .div-1 {
   }
 }
 
+div .div-4 {
+  background-color: #ff867c;
+}
+
 .button-4 {
   border: none;
+  background-color: #b61827;
   border-radius: 4px;
-  color: red;
+  color: white;
   padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
   vertical-align: center;
-  margin: 30px;
   font-family: 'Roboto Mono', monospace;
 }
 
 .button-4:focus {
   transition: all .3s ease-in-out;
   opacity: 0;
+}
+
+div .div-5 {
+  background-color: #ffa726;
 }
 
 .button-5 {
@@ -152,7 +178,6 @@ div .div-1 {
   display: inline-block;
   font-size: 20px;
   vertical-align: center;
-  margin: 30px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -175,18 +200,21 @@ div .div-1 {
   content: "Thankyou";
 }
 
+div .div-6 {
+  background-color: #ab000d;
+}
+
 .button-6 {
   border: 2px solid red;
   border-radius: 0px;
   color: black;
   height: 60px;
-  width: 300px;
+  width: 200px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   vertical-align: center;
-  margin: 30px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -214,20 +242,23 @@ div .div-1 {
   display: none;
 }
 
+div .div-7 {
+  background-color: #f06292;
+}
+
 .button-7 {
   border: none;
   background-color: white;
   border-radius: 10px;
-  color: hotpink;
+  color: #ff94c2;
+  border: 3px solid #ba2d65;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   padding: 30px;
   border-radius: 50%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  vertical-align: center;
-  margin: 30px;
+  font-size: 24px;
   font-family: Helvetica, sans-serif;
 }
 
@@ -248,25 +279,28 @@ div .div-1 {
   }
 }
 
+div .div-8 {
+  background-color: #4ebaaa;
+}
+
 .button-8 {
   border: none;
   background-color: white;
   border-radius: 10px;
-  color:#00838f;
-  box-shadow: 0 0 15px 0 rgba(25,118,210, 0.20);
+  color: #005b4f;
+  box-shadow: 0 0 15px 0 rgba(25,118,210, 0.80);
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   vertical-align: center;
-  margin: 30px;
   font-family: Helvetica, sans-serif;
 }
 
 .button-8-text {
   display: none;
-  color: #80cbc4;
+  color: #4ebaaa;
 }
 
 .button-8:focus .button-8-text {
@@ -285,6 +319,10 @@ div .div-1 {
   }
 }
 
+div .div-9 {
+  background-color: lightblue;
+}
+
 .button-9 {
   background-size: 100%;
   background-image: linear-gradient(to right, #65499c, #ce93d8);
@@ -293,12 +331,11 @@ div .div-1 {
   cursor: pointer;
   color: white;
   display: inline-block;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 18px;
   position: relative;
   z-index: 100;
   height: 50px;
-  width: 300px;
+  width: 200px;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -318,7 +355,7 @@ div .div-1 {
 
 .button-9:focus::before {
   opacity: 1;
-  content: "Successfully Added";
+  content: "Added";
 }
 
 .button-9:focus .button-9-text {

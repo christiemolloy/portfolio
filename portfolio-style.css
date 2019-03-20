@@ -17,24 +17,42 @@ h1 {
   font-size: 30px;
 }
 
+h1 a {
+  color: black;
+}
+
+h1 a:focus {
+  background-color: yellow;
+}
+
 h2 {
   font-family: 'Moderat Regular';
   font-size: 24px;
+  line-height: 1.2;
+  margin-top: 8px;
 }
 
 h3 {
-  font-family: 'Moderat Regular';
-  font-size: 16px;
-  color: grey;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: black;
+  font-weight: 100;
+  margin-bottom: 0;
+  background-color: yellow;
+  display: inline-block;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  color: #979797;
+  font-family: 'Open Sans', serif;
+  color: #505050;
+  font-size: 16px;
 }
 
 ul li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', serif;
+  color: #505050;
+  font-size: 15px;
+  line-height: 1.2em;
 }
 
 img {
@@ -51,6 +69,10 @@ header {
   padding: 64px;
 }
 
+.header-right a {
+  margin-right: 12px;
+}
+
 @media screen and (max-width: 600px) {
   header {
     padding: 48px;
@@ -60,13 +82,13 @@ header {
 header a {
   color: #000;
   font-size: 18px;
-  text-decoration: none;
   background: #ff0;
-  font-family: 'Moderat Bold';
+  font-family: 'Roboto Mono', monospace;
 }
 
 #section-intro {
   padding: 64px;
+  max-width: 600px;
 }
 
 #section-projects {
@@ -79,22 +101,50 @@ header a {
   }
 }
 
-#section-intro {
+#section-description {
   max-width: 600px;
+  padding-top: 24px;
+  padding-right: 64px;
+  padding-bottom: 0;
+  padding-left: 64px;
 }
 
 #section-projects {
   display: grid;
   grid-gap: 50px;
+  grid-template-columns: auto;
 }
 
 #section-projects div {
   position: relative;
-  width: 100%;
 }
 
-#section-projects .project-two {
-  width: 50%;
+#section-projects div .middle {
+  transition: .3s ease;
+  color: black;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#section-project div:hover {
+  opacity: 0.3;
+}
+
+#section-projects div:hover .middle {
+  opacity: 1;
+}
+
+#section-projects div .text {
+  z-index: 100;
+  color: black;
+  font-size: 32px;
+  padding: 16px 32px;
+  font-family: 'Moderat Regular';
 }
 
 @media screen and (max-width: 600px) {
@@ -119,14 +169,39 @@ div img {
   text-align: center;
 }
 
-#section-image-text .text-description {
-  width: calc(50% - 64px - 64px);
-  padding: 64px;
+.centered-text {
+  padding-top: 24px;
+  padding-right: 128px;
+  padding-bottom: 24px;
+  padding-left: 128px;
 }
 
-#section-image-text img {
-  width: calc(50% - 64px - 64px);
-  padding: 64px;
+.left-aligned-text {
+  text-align: left;
+  padding-left: 128px;
+}
+
+@media screen and (max-width: 600px) {
+  .centered-text {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+  }
+}
+
+#section-image-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
+  padding: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  #section-image-text {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {

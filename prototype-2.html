@@ -1,0 +1,349 @@
+<html>
+    <head>
+        <style>
+            ::-webkit-scrollbar { 
+                display: none; 
+            }
+            html {
+                background-color: white;
+            }
+            body {
+                width: 100%;
+            }
+            img {
+                border-color: crimson;
+                border-width: 2;
+                border-style: solid;
+                
+            }
+            .wrapper {
+                margin-left:9.3%;
+                margin-right: 9.3%;
+                width: 81.4%;
+            }
+            @font-face {
+            font-family: h1font;
+            src: url(futuramediumbt.ttf);  
+            }
+            
+            @font-face {
+            font-family: h3font;
+            src: url(ITCFranklinGothicDemi.ttf);  
+            }
+            
+            @font-face {
+            font-family: h4font;
+            src: url(ITCFranklinGothicMedium.ttf);  
+            }
+            
+            @font-face {
+            font-family: h2font;
+            src: url(Lutr____.ttf);
+            }
+            
+            .columns {
+                width: 12%;
+                float: left;
+                font-family: h2font;
+                color: white;
+                
+            }
+            
+            .outsidecols {
+                float: left;
+                z-index: 9999;
+                -webkit-transform: rotate(-270deg); 
+                position: absolute;
+                top: 300px;
+                left: -60px;
+                
+            }
+            
+            .outsidecols2 {
+                float: right;
+                z-index: 9999;
+                -webkit-transform: rotate(-90deg); 
+                position: absolute;
+                top: 300px;
+                right: -60px;
+            }
+            
+            .outsidecols2 p {
+                float: right;
+                font-family: h4font;
+                font-weight: 700;
+                color: red;
+            }
+            
+            .outsidecols p {
+                float: left;
+                font-family: h4font;
+                font-weight: 700;
+                color: red;
+            }
+            
+            .parallax {
+                perspective: 1px;
+                height: 100vh;
+                overflow-x: hidden;
+                overflow-y: auto;
+             }
+
+            .parallax__layer {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+            
+            .parallax__layer--base {
+                transform: translateZ(0);
+            }
+            
+            .parallax__layer--back {
+                transform: translateZ(-1px) scale(2);
+            }
+            
+            .parallax__layer--back2 {
+                transform: translateZ(-2px) scale(3);
+            }
+            
+            .parallax__layer--back3 {
+                transform: translateZ(-3px) scale(4);
+            }
+            
+            .parallax__group {
+                position: relative;
+                height: 100vh;
+                transform-style: preserve-3d;
+            }
+            
+            .big {
+                font-family: h4font;
+                font-size: 360pt;
+                color: red;
+                position: fixed;
+                transform: translateZ(-4px) scale(5);
+            }
+            
+            
+        </style>
+        
+    </head>
+    
+    
+        <div class="outsidecols">
+            <p>Mood Board | by Christie Molloy</p>
+        </div>
+    
+        <div class="outsidecols2">
+            <p>Mood Board | by Christie Molloy</p>
+        </div>
+    
+    <body>
+        
+      <div class="wrapper">
+      <div class="parallax">
+        <div class="parallax__group">
+          <div class="parallax__layer parallax__layer--base"> 
+                  
+            <div class="columns">
+                <img src="image/para-1.png" width=300%; style="margin: 600% 0% 0 0%!important;">  
+                <img src="image/para-2.png" width=300%; style="margin: 600% 0% 0 0%!important;"> 
+                <img src="image/para-3.png" width=300%; style="margin: 600% 0% 0 0%!important;"> 
+                <img src="image/para-4.png" width=300%; style="margin: 600% 0% 0 0%!important;"> 
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-5.png" width=300%; style="margin: 3000% 0% 0 0%!important;">
+                <img src="image/para-6.png" width=300%; style="margin: 2000% 0% 0 0%!important;">
+                <img src="image/para-7.png" width=300%; style="margin: 1000% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-8.png" width=200%; style="margin: 1600% 0% 0 0%!important;"> 
+                <img src="image/para-9.png" width=200%; style="margin: 1600% 0% 0 0%!important;"> 
+                <img src="image/para-10.png" width=200%; style="margin: 2200% 0% 0 0%!important;"> 
+            
+            </div>   
+        
+            <div class="columns">
+            <img src="image/para-11.png" width=300%; style="margin: 2000% 0% 0 0%!important;">
+            </div>
+            
+            <div class="columns">
+                <img src="image/para-12.png" width=900%; style="margin: 2000% 0% 0 0%!important;">                
+                <img src="image/para-13.png" width=300%; style="margin: 2000% 0% 0 0%!important;">
+            </div>
+        
+            <div class="columns">
+                <img src="image/para-14.png" width=200%; style="margin: 1200% 0% 0 0%!important;">
+                <img src="image/para-15.png" width=200%; style="margin: 800% 0% 0 0%!important;">
+                <img src="image/para-16.png" width=200%; style="margin: 2000% 0% 0 0%!important;">
+                <img src="image/para-17.png" width=200%; style="margin: 1200% 0% 0 0%!important;">
+            </div>
+
+            <div class="columns">
+                <img src="image/para-18.png" width=200%; style="margin: 2400% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+            empty   
+            </div>
+              
+          </div>
+
+            
+
+          <div class="parallax__layer parallax__layer--back">
+              
+            <div class="columns">
+                <img src="image/para-19.png" width=200%; style="margin: 50% 0% 0 0%!important;">
+                <img src="image/para-20.png" width=200%; style="margin: 0 0% 0 0%!important;">
+            </div>
+        
+            <div class="columns">
+                <img src="image/para-21.png" width=200%; style="margin: 900% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-22.png" width=400%; style="margin: 400% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-23.png" width=200%; style="margin: 125% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-24.png" width=200%; style="margin: 1600% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-25.png" width=200%; style="margin: 500% 0% 0 0%!important;">
+            </div>
+          
+            <div class="columns">
+                <img src="image/para-26.png" width=200%; style="margin: 900% 0% 0 0%!important;">
+                <img src="image/para-27.png" width=200%; style="margin: 900% 0% 0 0%!important;">
+                <img src="image/para-28.png" width=200%; style="margin: 1200% 0% 0 0%!important;">
+            </div>
+              
+            
+            <div class="columns">
+                <img src="image/para-29.png" width=200%; style="margin: 200% 0% 0 0%!important;">
+            </div>
+              
+             
+            </div>
+
+            
+
+          <div class="parallax__layer parallax__layer--back2">
+            <div class="columns">
+                <img src="image/para-30.png" width=100%; style="margin: 800% 0% 0 0%!important;">
+            
+                <img src="image/para-31.png" width=200%; style="margin: 700% 0% 0 0%!important;">
+            
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-32.png" width=250%; style="margin: 400% 0% 0 0%!important;">
+                       
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-33.png" width=200%; style="margin: 100% 0% 0 0%!important;">
+                
+                <img src="image/para-34.png" width=200%; style="margin: 900% 0% 0 0%!important;">
+            </div>
+            
+            <div class="columns">
+                <img src="image/para-35.png" width=200%; style="margin: 1200% 0% 0 0%!important;">
+            </div>
+            
+            <div class="columns">
+                <img src="image/para-36.png" width=200%; style="margin: 200% 0% 0 0%!important;">
+
+            </div>
+        
+            <div class="columns">
+                <img src="image/para-37.png" width=200%; style="margin: 800% 0% 0 0%!important;">
+                <img src="image/para-38.png" width=200%; style="margin: 700% 0% 0 0%!important;">
+                
+            </div>
+          
+            <div class="columns">
+                <img src="image/para-39.png" width=200%; style="margin: 400% 0% 0 0%!important;">
+                <img src="image/para-40.png" width=200%; style="margin: 1600% 0% 0 0%!important;">
+                
+                
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-41.png" width=100%; style="margin: 1600% 0% 0 0%!important;">
+            </div>
+              
+          </div>
+
+            
+          <div class="parallax__layer parallax__layer--back3">
+              
+              
+            <div class="columns">
+                <img src="image/para-42.png" width=100%; style="margin: 200% 0% 0 0%!important;">
+
+                <img src="image/para-43.png" width=200%; style="margin: 500% 0% 0 0%!important;">
+            
+                <img src="image/para-44.png" width=200%; style="margin: 600% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-45.png" width=200%; style="margin: 100% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-46.png" width=200%; style="margin: 1200% 0% 0 0%!important;">
+                
+                <img src="image/para-47.png" width=200%; style="margin: 400% 0% 0 0%!important;">
+            </div>
+            
+        
+            <div class="columns">
+                <img src="image/para-48.png" width=100%; style="margin: 700% 0% 0 0%!important;">
+            </div>
+            
+            <div class="columns">
+                <img src="image/para-49.png" width=200%; style="margin: 400% 0% 0 0%!important;">
+                
+                <img src="image/para-50.png" width=300%; style="margin: 800% 0% 0 0%!important;">
+            </div>
+        
+          
+            <div class="columns">
+                <img src="image/para-51.png" width=300%; style="margin: 700% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-52.png" width=100%; style="margin: 0% 0% 0 0%!important;">
+            </div>
+              
+            <div class="columns">
+                <img src="image/para-53.png" width=100%; style="margin: 1000% 0% 0 0%!important;">
+            </div>
+          </div>
+            
+            <div class="big">MOOD BOARD. MOOD BOARD. MOOD BOARD.</div> 
+            
+          </div>
+        
+        </div>
+          
+        
+        
+    </div>
+    
+    </body>
+
+
+</html>

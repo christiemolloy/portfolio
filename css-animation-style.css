@@ -42,7 +42,7 @@ div .div-1 {
 
 .button-1-text-2 {
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   display: none;
   vertical-align: center;
 }
@@ -59,7 +59,7 @@ div .div-1 {
 }
 
 .button-1:focus .button-1-text-2 {
-  display: inline-block;
+  display: block;
   transition: all .6s ease-out-in;
 }
 
@@ -320,12 +320,13 @@ div .div-8 {
 }
 
 div .div-9 {
-  background-color: lightblue;
+  background-color: #ffc4ff;
 }
 
 .button-9 {
+  border: 0;
   background-size: 100%;
-  background-image: linear-gradient(to right, #65499c, #ce93d8);
+  background-image: linear-gradient(to right, #65499c, #ff94c2);
   border-radius: 10px;
   box-shadow: 0 10px 30px 0 rgba(0,0,0,0.40);
   cursor: pointer;
@@ -340,8 +341,9 @@ div .div-9 {
 }
 
 .button-9::before {
+  border: 0;
   border-radius: inherit;
-  background-image: linear-gradient(to right, #ce93d8, #65499c);
+  background-image: linear-gradient(to right, #ce93d8, #8e24aa);
   content: '';    
   display: block;
   height: 100%;
@@ -350,14 +352,17 @@ div .div-9 {
   opacity: 0;
   width: 100%;
   z-index: -100;
-  transition: opacity 2s;
+  transition: opacity 3s;
 }
+
+.button-9-text::before {
+  content: "Add to Cart";
+} 
 
 .button-9:focus::before {
   opacity: 1;
-  content: "Added";
 }
 
-.button-9:focus .button-9-text {
-  display: none;
+.button-9:focus .button-9-text::before {
+  content: "Added";
 }

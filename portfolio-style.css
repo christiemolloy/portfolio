@@ -119,6 +119,12 @@ header a {
   position: relative;
 }
 
+#section-projects div a img {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
 #section-projects div .middle {
   transition: .3s ease;
   color: black;
@@ -131,15 +137,15 @@ header a {
   text-align: center;
 }
 
-#section-project div:hover {
-  opacity: 0.3;
+#section-projects div:hover a img {
+  opacity: 0.2;
 }
 
 #section-projects div:hover .middle {
   opacity: 1;
 }
 
-#section-projects div .text {
+#section-projects div .middle {
   z-index: 100;
   color: black;
   font-size: 32px;
